@@ -1,0 +1,30 @@
+body{
+    font-family: 'Damion', cursive;
+    background-color: #1a1a2e;    
+}
+
+.piano-keys{
+    text-align: center;
+}
+
+.piano-keys button{    
+    background-color: #fff;
+    border: 3px solid #e2e2e2;
+    padding: 2rem;
+    margin: 0.7rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.piano-keys button:hover{
+    background-color: #e0e0e0;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    color: #e94560;
+    text-align: center;
+    font-size: 7rem;
+    text-shadow: 5px 3px #7a2532;
+}
