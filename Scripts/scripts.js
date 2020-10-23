@@ -1,9 +1,8 @@
 for(i=0; i < document.querySelectorAll(".key").length; i++)
 {
     document.querySelectorAll(".key")[i].addEventListener("click", function(){
-        var key = this.innerHTML;        
-        clickedAnimation(key);
-
+        var key = this.innerHTML;     
+               
         switch (key) {
             case "A":
                 var audio = new Audio("./Audio/a5.ogg");
@@ -42,14 +41,16 @@ for(i=0; i < document.querySelectorAll(".key").length; i++)
         
             default:
             break;
-        }
+        }    
+
+        clickedAnimation(key);    
     }); 
 }
 
 function clickedAnimation(key){   
-    document.querySelector("." + key ).classList.add("clicked"); 
+    document.querySelector("." + key.toLowerCase() ).classList.add("clicked"); 
     setTimeout(function(){
-        document.querySelector("." + key ).classList.remove("clicked");
+        document.querySelector("." + key.toLowerCase() ).classList.remove("clicked");
     }, 100);
 }
 
