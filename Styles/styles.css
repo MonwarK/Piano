@@ -28,3 +28,8 @@ h1{
     font-size: 7rem;
     text-shadow: 5px 3px #7a2532;
 }
+
+.piano-keys .clicked{
+    background-color: #b2deec;
+    border: #7acae2;
+}
